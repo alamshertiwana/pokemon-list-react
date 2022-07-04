@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+.list-item-name{
+  text-transform:capitalize;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sub-heading {
+  font-size: 28px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+span.pokemon-type {
+  padding: 5px 12px;
+  background: #b97fc9;
+  margin-right: 10px;
+  display: inline-block;
+  border-radius: 2px;
+  color:white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.pokemon-information {
+  background: #30a7d7;
+  padding: 20px;
+  border-radius:4px
 }
 
-.App-link {
-  color: #61dafb;
+.pokemon-information h6 {
+  font-weight: 300;
+  color: #fff;
+  text-transform: capitalize;    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pokemon-information .ability li {
+  color: #fff;
+}
+
+.row.pokemon-title-row .col-12 {
+  border-bottom: 2px solid #fd7d24;
+}
+
+span.pokemon-ability {
+  background: #fd7d24;
+  color:#fff;
+  padding: 3px;
+  margin: 3px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-right: 10px;  
+}
+
+.loading-text-item {
+  height: 38px;
+  width: 180px;
+  display: block;
+  background: linear-gradient(0.25turn, transparent, #fff, transparent), linear-gradient(#eee, #eee), radial-gradient(38px circle at 19px 19px, #eee 50%, transparent 51%), linear-gradient(#eee, #eee);
+  background-repeat: no-repeat;
+  background-size: -180px 38px;
+  background-position: 0 0;
+  animation: loading 1.5s infinite;
+}
+
+.pokemon-detail .loading-text-item {
+  width: 280px;
+}
+
+.pokemon-detail .loading-image-item {
+  background: linear-gradient(0.25turn, transparent, #fff, transparent), linear-gradient(#eee, #eee), radial-gradient(38px circle at 19px 19px, #eee 50%, transparent 51%), linear-gradient(#eee, #eee);
+  background-repeat: no-repeat;
+  background-size: -180px 38px;
+  background-position: 0 0;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {  
+to {
+      background-position: 180px 0, 0 0, 0 190px, 50px 195px;
+}
+}
+
+.item-page .loading-text-item {
+  height:24px;
 }
